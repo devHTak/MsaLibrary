@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39e5332f-0afd-47dc-9f5a-53bd3567276a" name="Changes" comment="" />
+    <list default="true" id="39e5332f-0afd-47dc-9f5a-53bd3567276a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/filter/AuthenticationFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/config/AuthenticationFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/config/PasswordEncoder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/config/WebSecurity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/domain/Address.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/domain/Authority.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/domain/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/repository/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/service/UserService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/LoginDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/PointDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/SaveUserDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/UserDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/exception/ExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/web/rest/UserController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/kotlin/com/example/outbound/web/rest/UserControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/routes/Router.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/routes/Router.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,10 +61,16 @@
     <projectState path="$PROJECT_DIR$/gateway-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/user-service">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/discovery-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -39,6 +83,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -54,6 +101,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectId" id="26uLR1IhUs3QS61dYqCXToeVR2T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -64,7 +127,140 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.outbound.web.rest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.UserControllerTest">
+    <configuration name="UserControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest.getUserByIdNotExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.getUserByIdNotExists&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest.getUserByIdNotExistsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.getUserByIdNotExistsTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest.getUserByIdSucceessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.getUserByIdSucceessTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest.saveUserSuccessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.saveUserSuccessTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.UserControllerTest" />
+      <item itemvalue="Gradle.UserControllerTest.saveUserSuccessTest" />
+      <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExistsTest" />
+      <item itemvalue="Gradle.UserControllerTest.getUserByIdSucceessTest" />
+      <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExists" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UserControllerTest" />
+        <item itemvalue="Gradle.UserControllerTest.saveUserSuccessTest" />
+        <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExists" />
+        <item itemvalue="Gradle.UserControllerTest.getUserByIdSucceessTest" />
+        <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExistsTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,5 +283,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

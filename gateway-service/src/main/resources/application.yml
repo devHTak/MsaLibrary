@@ -17,3 +17,7 @@ management:
     web:
       exposure:
         include: refresh, health, beans, httptrace, busrefresh
+
+token:
+  expiration_time: 36000
+  secret: user-service
