@@ -5,43 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e5332f-0afd-47dc-9f5a-53bd3567276a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/filter/AuthenticationFilter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/config/AuthenticationFilter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/config/PasswordEncoder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/config/WebSecurity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/domain/Address.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/domain/Authority.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/domain/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/repository/UserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/inbound/service/UserService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/LoginDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/PointDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/SaveUserDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/dto/UserDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/exception/ExceptionHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/kotlin/com/example/outbound/web/rest/UserController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/kotlin/com/example/outbound/web/rest/UserControllerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/config/KafkaProducerConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/config/Resilience4JConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/OverdueItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/Rental.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/RentalStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/RentedItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/ReturnedItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/except/RentalUnavailableException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/OverdueItemRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/RentalRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/RentedItemRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/ReturnedItemRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/service/RentalService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/adaptor/client/BookClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/adaptor/producer/RentalProducer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookStatusEventDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookStock.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookStockEventDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/RentalDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/web/rest/RentalController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/web/rest/except/RentalControllerAdvice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/test/kotlin/com/example/outbound/web/rest/RentalControllerTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/7.4.1/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/routes/Router.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/routes/Router.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/kotlin/com/example/outbound/web/rest/UserControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/kotlin/com/example/outbound/web/rest/UserControllerTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +51,9 @@
     <projectState path="$PROJECT_DIR$/gateway-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/rental-service">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/user-service">
       <ProjectState />
     </projectState>
@@ -69,6 +62,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/discovery-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/user-service">
           <activation />
         </task>
         <projects_view>
@@ -83,8 +79,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
       </list>
@@ -135,11 +131,56 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.example.inbound.domain" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.outbound.web.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserControllerTest">
+  <component name="RunManager" selected="Gradle.RentalControllerTest">
+    <configuration name="RentalControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/rental-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.RentalControllerTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RentalControllerTest.rentalBookSuccessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/rental-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.RentalControllerTest.rentalBookSuccessTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="UserControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,104 +202,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserControllerTest.getUserByIdNotExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.getUserByIdNotExists&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="DiscoveryApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.DiscoveryApplicationKt" />
+      <module name="discovery-service.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="UserControllerTest.getUserByIdNotExistsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.getUserByIdNotExistsTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserControllerTest.getUserByIdSucceessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.getUserByIdSucceessTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserControllerTest.saveUserSuccessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest.saveUserSuccessTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="RentalApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.RentalApplicationKt" />
+      <module name="rental-service.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Gradle.UserControllerTest" />
-      <item itemvalue="Gradle.UserControllerTest.saveUserSuccessTest" />
-      <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExistsTest" />
-      <item itemvalue="Gradle.UserControllerTest.getUserByIdSucceessTest" />
-      <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExists" />
+      <item itemvalue="Gradle.RentalControllerTest" />
+      <item itemvalue="Kotlin.RentalApplicationKt" />
+      <item itemvalue="Kotlin.DiscoveryApplicationKt" />
+      <item itemvalue="Gradle.RentalControllerTest.rentalBookSuccessTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RentalControllerTest" />
+        <item itemvalue="Gradle.RentalControllerTest.rentalBookSuccessTest" />
+        <item itemvalue="Kotlin.DiscoveryApplicationKt" />
+        <item itemvalue="Kotlin.RentalApplicationKt" />
         <item itemvalue="Gradle.UserControllerTest" />
-        <item itemvalue="Gradle.UserControllerTest.saveUserSuccessTest" />
-        <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExists" />
-        <item itemvalue="Gradle.UserControllerTest.getUserByIdSucceessTest" />
-        <item itemvalue="Gradle.UserControllerTest.getUserByIdNotExistsTest" />
       </list>
     </recent_temporary>
   </component>
