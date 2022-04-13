@@ -1,0 +1,34 @@
+package com.example.config
+
+import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.common.serialization.StringDeserializer
+import org.springframework.context.annotation.Bean
+import org.springframework.kafka.annotation.EnableKafka
+import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory
+import org.springframework.kafka.core.ConsumerFactory
+import org.springframework.kafka.core.DefaultKafkaConsumerFactory
+import org.springframework.stereotype.Component
+
+@EnableKafka
+@Component
+class KafkaConsumerConfig {
+
+    @Bean
+    fun consumerFactory(): ConsumerFactory<String, String> {
+        val properties = mapOf(
+            ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG to "127.0.0.1:9092",
+            ConsumerConfig.GROUP_ID_CONFIG to "consumer_group",
+            ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java,
+            ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java
+        )
+
+        return DefaultKafkaConsumerFactory(properties)
+    }
+
+    @Bean
+    fun concurrentKafkaListenerContainerFactory(): ConcurrentKafkaListenerContainerFactory<String, String> {
+        val factory = ConcurrentKafkaListenerContainerFactory<String, String>()
+        factory.consumerFactory = consumerFactory()
+        return factory
+    }
+}
