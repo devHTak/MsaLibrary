@@ -1,0 +1,31 @@
+package com.example.config
+
+import org.apache.kafka.clients.producer.ProducerConfig
+import org.apache.kafka.common.serialization.StringSerializer
+import org.springframework.context.annotation.Bean
+import org.springframework.kafka.annotation.EnableKafka
+import org.springframework.kafka.core.DefaultKafkaProducerFactory
+import org.springframework.kafka.core.KafkaTemplate
+import org.springframework.kafka.core.ProducerFactory
+import org.springframework.stereotype.Component
+
+@EnableKafka
+@Component
+class KafkaProducerConfig {
+
+    @Bean
+    fun kafkaProducer(): ProducerFactory<String, String> {
+        var properties = mapOf(
+            ProducerConfig.BOOTSTRAP_SERVERS_CONFIG to "127.0.0.1:9092",
+            ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG to StringSerializer::class.java,
+            ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG to StringSerializer::class.java
+        )
+
+        return DefaultKafkaProducerFactory(properties)
+    }
+
+    @Bean
+    fun kafkaTemplate(): KafkaTemplate<String, String> {
+        return KafkaTemplate(kafkaProducer())
+    }
+}

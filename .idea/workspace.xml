@@ -5,33 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e5332f-0afd-47dc-9f5a-53bd3567276a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/config/KafkaProducerConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/config/Resilience4JConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/OverdueItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/Rental.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/RentalStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/RentedItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/domain/ReturnedItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/except/RentalUnavailableException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/OverdueItemRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/RentalRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/RentedItemRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/repository/ReturnedItemRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/inbound/service/RentalService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/adaptor/client/BookClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/adaptor/producer/RentalProducer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookStatusEventDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookStock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/BookStockEventDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/dto/RentalDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/web/rest/RentalController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/kotlin/com/example/outbound/web/rest/except/RentalControllerAdvice.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/test/kotlin/com/example/outbound/web/rest/RentalControllerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaConsumerConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaProducerConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Book.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/BookStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Classificattion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/ISBN.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/InStockBook.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Location.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Source.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/repository/BookRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/repository/InStockBookRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/service/BookService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/service/InStockBookService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/adaptor/consumer/BookConsumer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/adaptor/producer/BookProducer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookChangeStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookChanged.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookStockEventDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/InStockBookDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/UpdateBookDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/web/rest/BookController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/web/rest/InStockBookController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/kotlin/com/example/outbound/web/rest/UserControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/kotlin/com/example/outbound/web/rest/UserControllerTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/../ecommerce/config-service">
+    <projectState path="$PROJECT_DIR$/book-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/config-service">
@@ -57,6 +55,9 @@
     <projectState path="$PROJECT_DIR$/user-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/../ecommerce/config-service">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -69,7 +70,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="discovery-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -79,9 +85,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -136,6 +143,10 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.outbound.web.rest" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.outbound.dto" />
+      <recent name="com.example.inbound.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.RentalControllerTest">
@@ -219,9 +230,9 @@
     <list>
       <item itemvalue="Gradle.UserControllerTest" />
       <item itemvalue="Gradle.RentalControllerTest" />
+      <item itemvalue="Gradle.RentalControllerTest.rentalBookSuccessTest" />
       <item itemvalue="Kotlin.RentalApplicationKt" />
       <item itemvalue="Kotlin.DiscoveryApplicationKt" />
-      <item itemvalue="Gradle.RentalControllerTest.rentalBookSuccessTest" />
     </list>
     <recent_temporary>
       <list>
