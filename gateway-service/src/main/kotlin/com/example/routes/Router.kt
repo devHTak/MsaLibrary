@@ -42,6 +42,33 @@ class Router {
                     }
                     .uri("lb://USER-SERVICE")
             }
+            .route {r:PredicateSpec ->
+                r.path("/rental-service/**")
+                    .filters{f ->
+                        f.filter(loggingGlobalFilter.apply(LoggingGlobalFilter.Config("RENTAL-SERVICE", true, true)))
+                            .filter(authenticationFilter.apply(AuthenticationFilter.Config("")))
+                            .rewritePath("/rental-service/(?<segment>/*", "/$\\{segment}")
+                    }
+                    .uri("lb://RENTAL-SERVICE")
+            }
+            .route { r:PredicateSpec ->
+                r.path("/book-service/**")
+                    .filters{f ->
+                        f.filter(loggingGlobalFilter.apply(LoggingGlobalFilter.Config("BOOK-SERVICE", true, true)))
+                            .filter(authenticationFilter.apply(AuthenticationFilter.Config("")))
+                            .rewritePath("/book-service/(?<segment>/*", "/$\\{segment}")
+                    }
+                    .uri("lb://BOOK-SERVICE")
+            }
+            .route { r: PredicateSpec ->
+                r.path("/delivery-service/**")
+                    .filters{ f ->
+                        f.filter(loggingGlobalFilter.apply(LoggingGlobalFilter.Config("DELIVERY-SERVICE", true, true)))
+                            .filter(authenticationFilter.apply(AuthenticationFilter.Config("")))
+                            .rewritePath("/delivery-service/(?<segment>/*", "/$\\{segment}")
+                    }
+                    .uri("lb://DELIVERY-SERVICE")
+            }
             .build()
     }
 }

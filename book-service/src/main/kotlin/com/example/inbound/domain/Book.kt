@@ -24,7 +24,7 @@ class Book(
     var classificattion: Classificattion?,
 
     @Enumerated(EnumType.STRING)
-    var bookStatus: BookStatus?,
+    var bookStatus: BookStatus,
 
     @Enumerated(EnumType.STRING)
     var location: Location?,
@@ -48,7 +48,7 @@ class Book(
             return Book(
                 0L, inStockBook.title, inStockBook.description, inStockBook.author,
                 inStockBook.publisher, inStockBook.isbn, inStockBook.publicationDate, null,
-                null, null, inStockBook.bookId
+                BookStatus.AVAILABLE, null, inStockBook.bookId
             )
         }
     }
