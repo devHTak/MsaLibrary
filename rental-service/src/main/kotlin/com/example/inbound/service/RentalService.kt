@@ -26,6 +26,7 @@ class RentalService(
 
         rentalProducer.sendForStockEvent(BookStockEventDto(rentBook.bookId, BookStock.UNAVAILABLE))
         rentalProducer.sendForStatusEvent(BookStatusEventDto(rentBook.bookId, BookStatus.RENT_BOOK))
+        rentalProducer.sendForDeliveryEvent(RentalEventDto(rental.rentalId, rental.userId))
 
         return RentalDto(rental.id, rental.userId, rental.bookId)
     }

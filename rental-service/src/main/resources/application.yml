@@ -43,4 +43,5 @@ api:
     book:
       status-event: BOOK-STATUS-EVENT
       stock-event: BOOK-STOCK-EVENT
+      delivery-event: DELIVERY-EVENT
 
