@@ -2,12 +2,14 @@ package com.example.inbound.domain
 
 import com.example.inbound.except.RentalUnavailableException
 import java.time.LocalDateTime
+import java.util.*
 import javax.persistence.*
 
 @Entity
 class Rental(
     @Id @GeneratedValue
     var id: Long,
+    var rentalId: String,
     var userId: String,
     var bookId: String,
     @Enumerated(value = EnumType.STRING)
@@ -23,13 +25,14 @@ class Rental(
     @OneToMany(mappedBy ="rental", cascade = arrayOf(CascadeType.ALL), orphanRemoval = false)
     var returnedItems: MutableList<ReturnedItem>
     ) {
-    constructor(): this(0L, "", "", RentalStatus.RENT_AVAILABLE, 0L,
+    constructor(): this(0L, "","", "", RentalStatus.RENT_AVAILABLE, 0L,
         mutableListOf<RentedItem>(), mutableListOf<OverdueItem>(), mutableListOf<ReturnedItem>())
 
     companion object {
         fun createRental(userId: String): Rental {
             val rental = Rental()
             rental.userId = userId
+            rental.rentalId = UUID.randomUUID().toString()
 
             return rental
         }

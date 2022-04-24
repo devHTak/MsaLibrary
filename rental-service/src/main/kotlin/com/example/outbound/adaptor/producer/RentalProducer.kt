@@ -2,6 +2,7 @@ package com.example.outbound.adaptor.producer
 
 import com.example.outbound.dto.BookStatusEventDto
 import com.example.outbound.dto.BookStockEventDto
+import com.example.outbound.dto.RentalEventDto
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.kafka.core.KafkaTemplate
@@ -12,7 +13,8 @@ class RentalProducer(
     private val kafkaTemplate: KafkaTemplate<String, String>,
     private val objectMapper: ObjectMapper,
     @Value("api.topic.book.stock-event") private val topicStockEvent: String,
-    @Value("api.topic.book.status-event") private val topicStatusEvent: String
+    @Value("api.topic.book.status-event") private val topicStatusEvent: String,
+    @Value("api.topic.book.rental-event") private val topicDeliveryEvent: String
 ) {
 
     fun sendForStockEvent(bookStockEventDto: BookStockEventDto) {
@@ -23,5 +25,10 @@ class RentalProducer(
     fun sendForStatusEvent(bookStatusEventDto: BookStatusEventDto) {
         val data = objectMapper.writeValueAsString(bookStatusEventDto);
         kafkaTemplate.send(topicStatusEvent, data)
+    }
+
+    fun sendForDeliveryEvent(rentalEvent: RentalEventDto) {
+        val data = objectMapper.writeValueAsString(rentalEvent)
+        kafkaTemplate.send(topicDeliveryEvent, data)
     }
 }
