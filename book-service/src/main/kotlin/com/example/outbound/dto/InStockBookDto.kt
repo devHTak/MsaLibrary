@@ -10,6 +10,6 @@ class InStockBookDto(
     var publisher: String,
     var isbn: Long,
     var publicationDate: LocalDateTime,
-    var source: Source,
+    var source: Source?,
 ) {
 }

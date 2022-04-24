@@ -2,8 +2,8 @@ package com.example.outbound.dto
 
 import com.example.inbound.domain.BookStatus
 
-class BookStockEventDto(
+class BookStatusEventDto(
     var bookId: String,
-    var bookStock: BookStatus
+    var bookStatus: BookStatus
 ) {
 }
