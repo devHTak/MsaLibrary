@@ -5,31 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e5332f-0afd-47dc-9f5a-53bd3567276a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaConsumerConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaProducerConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Book.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/BookStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Classificattion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/ISBN.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/InStockBook.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Location.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Source.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/repository/BookRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/repository/InStockBookRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/service/BookService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/service/InStockBookService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/adaptor/consumer/BookConsumer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/adaptor/producer/BookProducer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookChangeStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookChanged.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookStockEventDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/InStockBookDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/UpdateBookDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/web/rest/BookController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/web/rest/InStockBookController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/web/rest/except/BookControllerAdvice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/test/kotlin/com/example/outbound/adaptor/BookKafkaTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/test/kotlin/com/example/outbound/web/rest/BookControllerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/test/kotlin/com/example/outbound/web/rest/InStockBookControllerTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaConsumerConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaConsumerConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaProducerConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/config/KafkaProducerConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Book.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/Book.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/ISBN.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/ISBN.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/InStockBook.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/domain/InStockBook.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/service/BookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/inbound/service/BookService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/adaptor/consumer/BookConsumer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/adaptor/consumer/BookConsumer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookChanged.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookChanged.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookStockEventDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/BookStatusEventDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/InStockBookDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/kotlin/com/example/outbound/dto/InStockBookDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/routes/Router.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/kotlin/com/example/routes/Router.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +63,26 @@
         <task path="$PROJECT_DIR$/user-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/book-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="discovery-service" type="f1a62948:ProjectNode" />
+                <item name="book-service" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="book-service" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="book-service" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -85,11 +94,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -141,7 +150,11 @@
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="com.example.inbound.domain" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.outbound.adaptor.consumer" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.outbound.adaptor.consumer" />
       <recent name="com.example.outbound.web.rest" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -149,13 +162,13 @@
       <recent name="com.example.inbound.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RentalControllerTest">
-    <configuration name="RentalControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.BookConsumerTest">
+    <configuration name="BookConsumerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/rental-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/book-service" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.RentalControllerTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.adaptor.BookConsumerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -171,12 +184,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RentalControllerTest.rentalBookSuccessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BookControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/rental-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/book-service" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.RentalControllerTest.rentalBookSuccessTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.BookControllerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -192,12 +205,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InStockBookControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/book-service" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.UserControllerTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.outbound.web.rest.InStockBookControllerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -212,6 +225,13 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="BookApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.BookApplicationKt" />
+      <module name="book-service.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DiscoveryApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.DiscoveryApplicationKt" />
@@ -220,27 +240,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RentalApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.RentalApplicationKt" />
-      <module name="rental-service.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Gradle.UserControllerTest" />
-      <item itemvalue="Gradle.RentalControllerTest" />
-      <item itemvalue="Gradle.RentalControllerTest.rentalBookSuccessTest" />
-      <item itemvalue="Kotlin.RentalApplicationKt" />
+      <item itemvalue="Gradle.BookControllerTest" />
+      <item itemvalue="Gradle.InStockBookControllerTest" />
       <item itemvalue="Kotlin.DiscoveryApplicationKt" />
+      <item itemvalue="Kotlin.BookApplicationKt" />
+      <item itemvalue="Gradle.BookConsumerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RentalControllerTest" />
-        <item itemvalue="Gradle.RentalControllerTest.rentalBookSuccessTest" />
+        <item itemvalue="Gradle.BookConsumerTest" />
+        <item itemvalue="Kotlin.BookApplicationKt" />
         <item itemvalue="Kotlin.DiscoveryApplicationKt" />
-        <item itemvalue="Kotlin.RentalApplicationKt" />
-        <item itemvalue="Gradle.UserControllerTest" />
+        <item itemvalue="Gradle.InStockBookControllerTest" />
+        <item itemvalue="Gradle.BookControllerTest" />
       </list>
     </recent_temporary>
   </component>

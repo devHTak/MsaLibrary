@@ -9,7 +9,6 @@ import org.springframework.kafka.core.ConsumerFactory
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory
 import org.springframework.stereotype.Component
 
-@EnableKafka
 @Component
 class KafkaConsumerConfig {
 

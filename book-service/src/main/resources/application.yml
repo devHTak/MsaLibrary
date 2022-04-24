@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: rental-service
+    name: book-service
   h2:
     console:
       enabled: true

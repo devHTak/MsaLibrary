@@ -12,7 +12,7 @@ class BookChanged(
     var author: String,
     var publicationDate: LocalDateTime?,
     var classificattion: Classificattion?,
-    var rented: Boolean,
+    var rented: Boolean?,
     var eventType: BookChangeStatus,
     var rentCnt: Long,
     var bookId: String

@@ -46,19 +46,20 @@ class BookService(
     fun deleteBook(bookId: String) {
         var book = bookRepository.findByBookId(bookId)
             .orElseThrow { IllegalArgumentException() }
-        bookRepository.delete(book)
 
         sendBookCatalogEvent(BookChangeStatus.DELETE_BOOK, book.bookId)
+
+        bookRepository.delete(book)
     }
 
-    private fun sendBookCatalogEvent(bookChangeStatus: BookChangeStatus, bookId: String) {
+    fun sendBookCatalogEvent(bookChangeStatus: BookChangeStatus, bookId: String) {
         val book = bookRepository.findByBookId(bookId)
             .orElseThrow { IllegalArgumentException() }
 
         if(BookChangeStatus.NEW_BOOK.equals(bookChangeStatus) || BookChangeStatus.UPDATE_BOOK.equals(bookChangeStatus)) {
             val bookChanged = BookChanged(
                 book.title, book.description, book.author, book.publicationDate,
-                book.classificattion!!, book.bookStatus!!.equals(BookStatus.AVAILABLE), bookChangeStatus,
+                book.classificattion, book.bookStatus.equals(BookStatus.AVAILABLE), bookChangeStatus,
                 0L, book.bookId)
             bookProducer.sendBookEvent(bookChanged)
         } else {

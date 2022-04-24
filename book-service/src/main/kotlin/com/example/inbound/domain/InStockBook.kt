@@ -22,7 +22,7 @@ class InStockBook(
     var publicationDate: LocalDateTime,
 
     @Enumerated(EnumType.STRING)
-    var source:Source,
+    var source:Source?,
 
     var bookId: String
 ) {
